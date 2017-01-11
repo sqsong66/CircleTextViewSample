@@ -32,11 +32,12 @@ dependencies {
     testCompile 'junit:junit:4.12'
 }
 
-version = '1.1.0'
-def siteUrl = 'https://github.com/songmao123/CircleTextView'      // Homepage URL of the library
-def gitUrl = 'https://github.com/songmao123/CircleTextView.git'   // Git repository URL
-def issueUrl = 'https://github.com/songmao123/CircleTextView/issues'
-group = "com.sqsong.circletextview"                      // Maven Group ID for the artifact
+
+version = '1.0.0'
+def siteUrl = 'https://github.com/songmao123/CircleTextViewSample'      // Homepage URL of the library
+def gitUrl = 'https://github.com/songmao123/CircleTextViewSample.git'   // Git repository URL
+def issueUrl = 'https://github.com/songmao123/CircleTextViewSample/issues'
+group = "com.github.songmao123"                      // Maven Group ID for the artifact
 
 install {
     repositories.mavenInstaller {
@@ -44,7 +45,7 @@ install {
         pom {
             project {
                 packaging 'aar'
-                name 'CircleTextView'
+                name 'circle-text'
                 url siteUrl
 
                 // Set your license
@@ -56,7 +57,7 @@ install {
                 }
                 developers {
                     developer {
-                        id 'songmao'
+                        id 'songmao123'
                         name 'SQSong'
                         email 'SQSong66@gmail.com'
                     }
@@ -98,9 +99,9 @@ bintray {
     configurations = ['archives']
     pkg {
         repo = 'maven'
-        name = "CircleTextView"
+        name = "circle-text"
         desc = 'A TextView with circle background!'
-        userOrg = 'sqsong'
+        userOrg = 'songe'
         websiteUrl = siteUrl
         vcsUrl = gitUrl
         issueTrackerUrl = issueUrl
@@ -110,4 +111,5 @@ bintray {
         publicDownloadNumbers = true
     }
 }
+
 

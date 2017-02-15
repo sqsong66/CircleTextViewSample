@@ -104,7 +104,7 @@ bintray {
         repo = 'maven'
         name = "circle-text"
         desc = 'A TextView with circle background!'
-        userOrg = 'songe'
+        userOrg = 'moxian'
         websiteUrl = siteUrl
         vcsUrl = gitUrl
         issueTrackerUrl = issueUrl
